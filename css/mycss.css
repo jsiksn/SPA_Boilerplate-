@@ -1,0 +1,118 @@
+html, body {
+  font-size: 16px;
+  font-family: "GmarketSansMedium";
+}
+html li, body li {
+  list-style: none;
+}
+
+.section {
+  min-height: 600px;
+}
+
+#main_banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 53.25rem;
+  background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/visual.jpg) no-repeat center 0/cover;
+}
+
+#hada_swiper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 53.25rem;
+  background: rgba(10, 28, 56, 0.95);
+}
+
+#happy_thumb {
+  display: block;
+  position: relative;
+  padding: 5.375rem 0 8.375rem;
+}
+#happy_thumb .decoration .deco_question {
+  right: 24.5rem;
+  top: -48rem;
+  z-index: -1;
+  width: 30.6875rem;
+  height: 100.5rem;
+  opacity: 0.25;
+  display: block;
+  position: absolute;
+}
+#happy_thumb .decoration .deco_dots_two {
+  top: 4.375rem;
+  left: 50%;
+  margin-left: -50rem;
+  width: 5.25rem;
+  height: 5.3125rem;
+  display: block;
+  position: absolute;
+}
+#happy_thumb .decoration .deco_circle_opa {
+  bottom: -9rem;
+  left: 4rem;
+  z-index: -1;
+  width: 24.5rem;
+  height: 24.5rem;
+  display: block;
+  position: absolute;
+}
+#happy_thumb .decoration .deco_circle_multiple {
+  bottom: -6.5rem;
+  right: 5.625rem;
+  width: 14.5rem;
+  height: 13rem;
+  display: block;
+  position: absolute;
+}
+
+#aboutus {
+  position: relative;
+  width: 100%;
+  height: 38.75rem;
+  background-color: rgba(11, 30, 144, 0.9);
+  overflow: hidden;
+  background-image: linear-gradient(0deg, transparent 24%, rgba(65, 90, 219, 0.04) 25%, rgba(65, 90, 219, 0.04) 26%, transparent 27%, transparent 74%, rgba(65, 90, 219, 0.04) 75%, rgba(65, 90, 219, 0.04) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(65, 90, 219, 0.04) 25%, rgba(65, 90, 219, 0.04) 26%, transparent 27%, transparent 74%, rgba(65, 90, 219, 0.04) 75%, rgba(65, 90, 219, 0.04) 76%, transparent 77%, transparent);
+  background-size: 7.5rem 7.5rem;
+  font-size: 1.7em;
+}
+#aboutus .container {
+  background-image: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/deco_together.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+#aboutus .container .btn {
+  width: 13.125rem;
+  height: 3.875rem;
+  display: block;
+  margin-top: 2rem;
+  background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/btn_rounded.svg) no-repeat;
+  background-size: cover;
+  color: #47d8e5 !important;
+}
+#aboutus:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  margin-left: -54.52rem;
+  width: 33.75rem;
+  height: 59.6875rem;
+  background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/deco_bottom_left.png);
+  background-size: 33.75rem auto;
+}
+
+#ft {
+  position: relative;
+  width: 100%;
+  padding: 3.375rem 0 2.5rem;
+  background: #081121;
+  color: white;
+  font-size: 0.85em;
+}
+#ft .container .copy {
+  font-size: 0.85em;
+}

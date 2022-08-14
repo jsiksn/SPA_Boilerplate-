@@ -13,19 +13,102 @@
     <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="plugin/aos/aos.css">
     <!-- 커스터마이징 -->
-    <link rel="stylesheet" href="css/mycss.min.css">
+    <link rel="stylesheet" href="css/mycss.min.css?ver=<?php echo time(); ?>">
 </head>
-<body>
-    
+<body id="topPage">
+        <div class="wrap">
+            <header class="fixed-top bg-white border-bottom" id="hd">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <h1 class="mb-0 col-4 col-sm-2"><a href="#topPage" class="scrollPage"><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/logo.svg" class="img-fluid" alt="김대일문화재단 로고"></a></h1>
+                    <ul id="gnb" class="d-flex mb-0">
+                        <li class="ml-md-3 mx-2"><a href="#main_banner" class="text-dark scrollPage">재단비전</a></li>
+                        <li class="ml-md-3 mx-2"><a href="#hada_swiper" class="text-dark scrollPage">재단소식</a></li>
+                        <li class="ml-md-3 mx-2"><a href="#aboutus" class="text-dark scrollPage">재단소개</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section id="main_banner" class="section"></section>
+	        <section id="hada_swiper" class="section"></section>
+	        <section id="happy_thumb" class="section">
+                <div class="decoration">
+                    <i class="deco_question js-parallax" data-strength="0.05" data-dir="y+" style="transform: translate3d(0px, 65.1472px, 0px);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.5 722.2" enable-background="new 0 0 490.5 722.2">
+                            <path d="M481.8 178.4c-10-41.4-28.1-78.6-57.6-109.8-36.8-39.1-82.2-61-135.4-67-5.3-.6-10.7.1-15.8-1.6h-25c-8.1.7-16.2 1.2-24.3 2.3-32.9 4.4-64.1 13.8-93 30.3-35.2 20.2-63.1 47.7-82.3 83.6-24.5 45.8-28.4 94.6-19.8 144.8 9 52.4 36.8 92.8 80.6 122.5 19.7 13.4 41.3 23 62.7 33 9.5 4.4 9.8 5.5 3.3 13.5-10.9 13.4-23.6 24.9-36.8 35.9-31.6 26.5-65.1 50.3-102.4 68.3-10.8 5.2-19.1 13.2-25.5 23.3-5.5 8.8-8.1 18.5-10.5 28.4v20c.3 1.1.7 2.2.9 3.4 4.8 32.5 18.7 60.3 42.7 82.7 19.4 18.1 42.4 28.5 69.1 30.1 14.5.8 27.8-3.7 41.1-9.1 66.2-27.4 126.2-64.7 178.9-113.4 35.9-33.2 67.1-70.4 92.5-112.2 37.7-62.1 60.4-129 64.6-201.6 2-36.1.5-72.1-8-107.4zm-41.9 261.6c-19.6 41.8-45.3 79.6-75.7 114.2-45.8 52.1-100.3 92.8-161.3 125.3-20.5 10.9-41.7 20.1-63.1 28.9-21.3 8.8-41.5 4.7-61.4-4.4-35.6-16.2-55-45.5-65.6-81.8-5-17.2-6.5-34.2 1.2-51.2 5.9-13.1 14.5-23 27.9-29.3 33.1-15.7 63-36.7 91.5-59.7 17.1-13.8 33.7-28.2 48.1-45 1.5-1.8 2.9-3.6 4.2-5.6 6-8.9 4.7-15.7-4.7-20.7-10-5.4-20.4-9.8-30.6-14.7-23.2-11-44.9-24.3-63.4-42.2-19.1-18.5-32.8-40.6-41.7-65.7-9.2-26.1-13.2-53.1-12-80.6 2.1-46.9 17.9-89 49.1-124.5 33.4-37.9 76.4-58.7 125.1-69 17.3-3.6 34.8-5.6 52.6-5.3 52.6.4 99.9 16.2 140.7 50 28.1 23.3 47.2 53.1 60.7 86.7 11.8 29.3 17.4 60 19.4 91.5 4.6 71.5-10.9 138.8-41 203.1z"></path>
+                        </svg>
+                    </i>
+                    <i class="deco_dots_two js-scroll active" data-direction="left" style="transition-delay: 0s; transition-duration: 0.8s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.6 90.7" enable-background="new 0 0 89.6 90.7">
+                            <path class="circle" d="M45.1 22.1c-5.2 0-9.4-4.2-9.4-9.3s4.2-9.3 9.4-9.3 9.4 4.2 9.4 9.3-4.2 9.3-9.4 9.3zm0 46.5c5.2 0 9.4 4.2 9.4 9.3 0 5.2-4.2 9.3-9.4 9.3s-9.4-4.2-9.4-9.3c0-5.1 4.2-9.3 9.4-9.3z"></path>
+                            <path class="line" d="M77.4 54.4c5.1 0 9.3-4.2 9.3-9.3s-4.2-9.3-9.3-9.3h-64.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3h64.8z"></path>
+                        </svg>
+                    </i>
+                    <i class="deco_circle_opa js-parallax" data-strength="0.05" data-dir="y+" style="transform: translate3d(0px, 65.1472px, 0px);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 45.5" enable-background="new 0 0 46.4 45.5">
+                            <circle cx="23.2" cy="22.8" r="22.1"></circle>
+                        </svg>
+                    </i>
+                    <i class="deco_circle_multiple js-scroll active" data-direction="right" style="transition-delay: 0s; transition-duration: 0.8s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.7 225.2" enable-background="new 0 0 249.7 225.2">
+                            <path class="line" d="M127.3 86.7l-89.9.3c-14.2 0-25.7 11.5-25.7 25.7s11.5 25.7 25.7 25.7l89.9-.4c14.2 0 25.7-11.5 25.7-25.7s-11.4-25.6-25.7-25.6z"></path>
+                            <path class="circle_green" d="M216.8 138.5c-14.2 0-25.7-11.5-25.7-25.7s11.5-25.8 25.7-25.8 25.7 11.5 25.7 25.7-11.6 25.8-25.7 25.8zm-22.6-90.5c-7.1 12.3-22.8 16.5-35.1 9.4s-16.5-22.8-9.5-35.1c7.1-12.3 22.8-16.5 35.1-9.4 12.4 7.1 16.6 22.8 9.5 35.1zm-35.1 120.1c12.3-7.1 28-2.9 35.1 9.4 7.1 12.3 2.9 28-9.5 35.1-12.3 7.1-28 2.9-35.1-9.4-7.1-12.2-2.8-28 9.5-35.1z"></path>
+                            <path class="circle_blue" d="M95.1 57.4c-12.3 7.1-28 2.9-35.1-9.4-7.1-12.3-2.9-28 9.4-35.1s28-2.9 35.1 9.4c7.2 12.2 2.9 27.9-9.4 35.1zm-35.1 120.1c7.1-12.3 22.8-16.5 35.1-9.4s16.6 22.8 9.5 35.1c-7.1 12.3-22.8 16.5-35.1 9.4-12.4-7.1-16.6-22.8-9.5-35.1z"></path>
+                        </svg>
+                    </i>
+                </div>
+            </section>
+	        <section id="aboutus" class="section">
+                <div class="container h-100 d-flex text-white flex-column justify-content-center">
+                    <div class="">
+                        <p>
+                            문화에는 즐거움과 행복, 그리고 <br>
+                            <strong>사람들을 연결하는 힘</strong>이 있다고 생각합니다.
+                        </p>
+                        <p>
+                            모든 사람들과 함께 문화를 누리고 <br>
+                            <strong>그 즐거움과 행복을 함께하고 싶습니다.</strong>
+                        </p>
+                        <a href="" class="btn text-white d-flex flex-column justify-content-center">
+                            About US
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="ft">
+                <div class="container d-flex">
+                    <h2 class="mb-0 col-4 col-sm-2 pr-sm-4"><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/foot_logo.svg" class="img-fluid" alt="김대일문화재단 로고"></h2>
+                    <div class="ftinner">
+                        <a href="" class="email">문의하기</a>
+                        <p class="ftinfo"><strong>(재)김대일문화재단</strong>
+                            <span>경기도 의왕시 성고개로 53 에이스청계타워 A동 705호
+                            대표자명:황지영</span>
+                        </p>
+                        <ul class="d-flex align-items-center m-0 p-0">
+                            <li class="mb-0"><a href=""><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/foot_mcst.png" alt="문화체육관광부"></a></li>
+                            <li class="mb-0"><a href=""><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/foot_nts.png" alt="국세청"></a></li>
+                        </ul>
+                        <p class="copy">© 김대일문화재단. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
         <!-- 자바스크립트 내장형으로 처리 -->
         <!-- swiper -->
         <script src="js/swiper/swiper-bundle.min.js"></script>
         <!-- aos -->
         <script src="js/aos/aos.js"></script>
         <!-- 제이쿼리 코어 3 -->
-        <script src="js/jquery/jquery-3.0.0.slim.min.js"></script>
+        <!-- <script src="js/jquery/jquery-3.0.0.slim.min.js"></script> -->
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
         <!-- 커스터마이징 -->
-        <script src="js/myjs.js"></script>
+        <script src="js/myjs.js?ver=<?php echo time(); ?>"></script>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   font-size: 16px;
   font-family: "GmarketSansMedium";
@@ -5,9 +6,70 @@ html, body {
 html li, body li {
   list-style: none;
 }
+html a, html a:hover, body a, body a:hover {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.blind {
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
 
 .section {
   min-height: 600px;
+}
+
+/* Layout */
+#gnb .scrollPage {
+  position: relative;
+}
+#gnb .scrollPage:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 0;
+  background-color: rgba(11, 30, 144, 0.9);
+  transition: 0.5s;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+#gnb .scrollPage.on:after, #gnb .scrollPage:hover:after {
+  width: 100%;
+}
+
+#hd {
+  padding: 1rem 0;
+  transition: 0.5s;
+}
+#hd.on {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#hd.on h1 a {
+  height: 2rem;
+  overflow: hidden;
+}
+#hd h1 {
+  width: 10rem;
+}
+#hd h1 a {
+  display: block;
+}
+#hd h1 a img {
+  width: 100%;
 }
 
 #main_banner {
@@ -25,6 +87,64 @@ html li, body li {
   width: 100%;
   height: 53.25rem;
   background: rgba(10, 28, 56, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hada_swiper .culture_item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5rem 0 0;
+}
+#hada_swiper .culture_item button {
+  width: 30%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 0;
+  text-align: left;
+}
+#hada_swiper .culture_item button h3 {
+  font-size: 1.3rem;
+}
+#hada_swiper .culture_item button span {
+  line-height: 0;
+  height: 0;
+  display: block;
+  margin-top: 0.5rem;
+  transform: translateY(-0.3rem);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+#hada_swiper .culture_item figure strong {
+  color: white;
+  top: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8%);
+}
+#hada_swiper .culture_item figure strong img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+#hada_swiper .culture_item.active button h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+}
+#hada_swiper .culture_item.active button span {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+#hada_swiper .culture_item.active figure strong {
+  transition: 0.5s;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 #happy_thumb {
